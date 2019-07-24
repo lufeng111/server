@@ -17,7 +17,11 @@ WebSocket通讯：学习WebSocket协议来与服务器通讯，
 <!-- 
 1：npm init -y 在server下创建一个包含默认配置的package.json 文件，
 2：因为使用typeScript语言所以引入node的类型定义文件 npm i @types/node --save, 类型定义文件的作用，是让开发者可以在typeScript中使用现在已有的JavaScript写成的库，需要注意的是node本身是不认typeScript，所以需要将typeScript编译成JavaScript，
-将typeScript编译成JavaScript，需要创建一个文件tsconfig.json，这个文件配置，会告诉如何将typeScript编译成JavaScript
+3: 将typeScript编译成JavaScript，需要创建一个文件tsconfig.json，这个文件配置，会告诉如何将typeScript编译成JavaScript
 有了配置文件之后，还需要让ide知道要用这个配置文件编译typeScript
+4: 在原始的node上开发需要处理很多问题比如配置等，为了简化工作量用express框架 npm install express --save
+express框架提供所有web应用都需要的常用功能，可以很方便的创建restful的http服务，
+5：安装express的类型定义文件，以便使用typeSCript来开发，npm install @types/express --save 就可以使用typeSCript语法来使用它的api了，
+6: npm install -g nodemon 安装这个插件，每次修改文件服务器就自动重启了，
 
  -->

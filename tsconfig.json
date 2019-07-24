@@ -1,24 +1,14 @@
 {
-    "compilerOptions": {
-        // compilerOptions 编译器的配置
-      "target": "es2015",
-    // target 目标是编译成es5
-      "module": "commonjs",
-    //   现在用的模块的规范是commonjs
+  "compileOnSave": true,
+  "compilerOptions":{       //编译器配置
+      "target":"es5",       //目标是编译成es5规范的脚本，也就是js
+      "module":"commonjs",  //模块的规范是commonjs
       "emitDecoratorMetadata": true,
-      "experimentalDecorators": true,
-      //   emitDecoratorMetadata experimentalDecorators 这两个编译的时候要保留元数据的装饰器
-      "outDir": "build",
-       //   编译之后的文件要放在build的目录里
-      "lib": ["es6"]
-    //   开发时需要用es6语法
-    },
-    "exclude": [
-        "node_modules"
-        // exclude排除，编译的时候哪些文件需要排除
-    ]
-  }
-/*
-*/
-
-  
+      "experimentalDecorators":true,   //这两个是要保留装饰器的元数据
+      "outDir":"build",   //编译后文件默认放置在build文件夹下
+      "lib":["es6"]       //开发时使用es6的语法
+  },
+  "exclude": [            //编译时要排除的文件
+      "node_modules"
+  ]
+}

@@ -22,6 +22,7 @@ WebSocket通讯：学习WebSocket协议来与服务器通讯，
 4: 在原始的node上开发需要处理很多问题比如配置等，为了简化工作量用express框架 npm install express --save
 express框架提供所有web应用都需要的常用功能，可以很方便的创建restful的http服务，
 5：安装express的类型定义文件，以便使用typeSCript来开发，npm install @types/express --save 就可以使用typeSCript语法来使用它的api了，
-6: npm install -g nodemon 安装这个插件，每次修改文件服务器就自动重启了，
+6: shift + command + b 运行tsconfig.json 把ts编译成js, 启动项目 npm build/hello_server.ts
+7: npm install -g nodemon 安装这个插件，每次修改文件服务器就自动重启了，
 
  -->
